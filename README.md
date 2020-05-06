@@ -1,6 +1,12 @@
 # Avatar
 Inspired by the piece of [Barry McGee, Untitled, 2009](https://www.sfmoma.org/artwork/2009.242.1-195/) seen in January 2011 in SFMOMA (San Francisco, CA)
 
+## Colors in sRGB
+```
+blue:  #38A8E0  rgb(56,168,224)
+brown: #683B11  rgb(104,59,17)
+```
+
 ## PNG 2000 px width
 
 
