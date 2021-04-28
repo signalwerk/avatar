@@ -15,6 +15,33 @@
       href="https://rawcdn.githack.com/signalwerk/signalwerk.styles/f0b1b2a/styles/main.rest.css"
       media="all"
     />
+    <style type="text/css">
+      :root {
+        --gray-color: #e6e8ea;
+        --brown-color: rgb(178, 112, 0);
+      }
+
+      code {
+        padding: 0;
+      }
+
+      code.lang-css {
+        color: var(--blue-color);
+      }
+
+      .lang-css .selector-class,
+      .lang-css .selector-tag,
+      .lang-css .selector-pseudo {
+        color: var(--green-color);
+      }
+      .lang-css .attribute {
+        color: var(--brown-color);
+      }
+
+      .lang-css .comment {
+        color: #888;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -44,6 +71,24 @@
           />
           <h3>Markdown</h3>
           <pre><code>![Signalwerk Avatar](https://avatar.signalwerk.ch/latest/signalwerk_2000px.png)</code></pre>
+        </section>
+        <section>
+          <h2>Colors</h2>
+
+          <h3>CSS · sRGB</h3>
+
+          <pre><code class="lang-css"><span class="selector-pseudo" >:root</span> {
+<!--   -->  <span class="attribute" >--color-avatar-blue</span>: <span class="number" >#38a8e0</span>; <span class="comment" >/* rgb(56,168,224) */</span>
+<!--   -->  <span class="attribute" >--color-avatar-brown</span>: <span class="number" >#683b11</span>; <span class="comment" >/* rgb(104,59,17) */</span>
+<!--   -->}<!--
+.      --></code></pre>
+          <h3>CSS · CIE L*a*b*</h3>
+
+          <pre><code class="lang-css"><span class="selector-pseudo" >:root</span> {
+<!--   -->  <span class="attribute" >--color-avatar-blue</span>: <span class="built_in" >lab</span>(67%,-30,-38);
+<!--   -->  <span class="attribute" >--color-avatar-brown</span>: <span class="built_in" >lab</span>(34%,24,46);
+<!--   -->}<!--
+.      --></code></pre>
         </section>
         <footer>
           <h2>Source</h2>
