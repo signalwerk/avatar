@@ -1,5 +1,7 @@
 <svg viewBox="0 0 2000 2000"
     xmlns="http://www.w3.org/2000/svg">
+    <rect width="2000" height="2000" fill="#ffffff"/>
+
     <g fill="#38a8e0">
         <path d="m247.44 0 164.96 285.85-.01.15h329.92l-164.95-286z"/>
         <path d="m1732.06 286-164.96-286h-329.92l164.96 286z"/>
