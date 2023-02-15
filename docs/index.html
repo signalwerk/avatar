@@ -4,16 +4,23 @@
     <meta charset="utf-8" />
     <title>Avatar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.signalwerk.ch" />
+    <link
+      href="https://fonts.signalwerk.ch/css/latest/family=Open+Sans:ital,wght@0,300..800;1,300..800.css"
+      rel="stylesheet"
+    />
+    <!-- styles -->
     <link
       rel="stylesheet"
-      href="https://rawcdn.githack.com/signalwerk/signalwerk.styles/de2666d/styles/main.critical.css"
+      href="https://rawcdn.githack.com/signalwerk/signalwerk.styles/72d62b5/styles/doc.critical.css"
       media="all"
     />
     <link
       rel="preload"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
-      href="https://rawcdn.githack.com/signalwerk/signalwerk.styles/de2666d/styles/main.rest.css"
+      href="https://rawcdn.githack.com/signalwerk/signalwerk.styles/72d62b5/styles/doc.rest.css"
       media="all"
     />
     <style>
@@ -44,126 +51,140 @@
       }
     </style>
   </head>
+
   <body>
     <main>
-      <article class="content">
-        <header>
-          <h1>Avatar</h1>
+      <!-- html:children:start -->
 
-          <address class="small">
-            Author:
-            <a rel="author" href="https://signalwerk.ch/">Stefan Huber</a>
-          </address>
+      <article class="document">
+        <header class="header">
+          <div class="header__inner">
+            <h1 class="header__title">Avatar</h1>
+            <p class="header__info">
+              2023 · Avatar for
+              <a rel="author" href="https://signalwerk.ch/">Stefan Huber</a>
+            </p>
+          </div>
         </header>
-        <section>
-          <h2>Background</h2>
-          <p>
-            Inspired by an untitled work by
-            <a
-              href="https://www.sfmoma.org/artwork/2009.242.1-195/"
-              target="_blank"
-              rel="noreferrer"
-              >Barry McGee (2009)</a
-            >. Seen in January 2011 at the San Francisco Museum of Modern Art.
-            <span class="small">
-              Also available at
+        <div class="document__item">
+          <section>
+            <h2>Avatar · Backstory</h2>
+            <p>
+              Inspired by an untitled work by
               <a
-                href="https://web.archive.org/web/20191207021050/https://s3-us-west-1.amazonaws.com/sfmoma-media-dev/www-media/2018/08/26005348/2009.242.1-193_01_b02-Large-TIFF_4000-pixels-long.jpg"
-                rel="nofollow"
-                >the Web Archive</a
-              >.
-            </span>
-          </p>
-        </section>
-        <section>
-          <h2>Avatar · SVG</h2>
-          <img src="./latest/signalwerk.svg" alt="Signalwerk Avatar" />
-          <h3>Markdown</h3>
-          <pre><code>![Signalwerk Avatar](https://avatar.signalwerk.ch/latest/signalwerk.svg)</code></pre>
-        </section>
-        <section>
-          <h2>Avatar · PNG 2000 px width</h2>
-          <img
-            src="https://avatar.signalwerk.ch/latest/w2000/signalwerk.png"
-            alt="Signalwerk Avatar"
-          />
-          <h3>Markdown</h3>
-          <pre><code>![Signalwerk Avatar](https://avatar.signalwerk.ch/latest/w2000/signalwerk.png)</code></pre>
-        </section>
-        <section>
-          <h2>Colors</h2>
+                href="https://www.sfmoma.org/artwork/2009.242.1-195/"
+                target="_blank"
+                rel="noreferrer"
+                >Barry McGee (2009)</a
+              >. On view at the San Francisco Museum of Modern Art in January
+              2011.<br/>
+              <span class="small">
+                Also available at
+                <a
+                  href="https://web.archive.org/web/20191207021050/https://s3-us-west-1.amazonaws.com/sfmoma-media-dev/www-media/2018/08/26005348/2009.242.1-193_01_b02-Large-TIFF_4000-pixels-long.jpg"
+                  rel="nofollow"
+                  >the Web Archive</a
+                >.
+              </span>
+            </p>
+          </section>
+          <section>
+            <h2>Avatar · SVG</h2>
+            <img src="./latest/signalwerk.svg" alt="Signalwerk Avatar" />
+            <h3>Markdown</h3>
+            <pre><code>![Signalwerk Avatar](https://avatar.signalwerk.ch/latest/signalwerk.svg)</code></pre>
+          </section>
+          <section>
+            <h2>Avatar · PNG 2000 px width</h2>
+            <img
+              src="https://avatar.signalwerk.ch/latest/w2000/signalwerk.png"
+              alt="Signalwerk Avatar"
+            />
+            <h3>Markdown</h3>
+            <pre><code>![Signalwerk Avatar](https://avatar.signalwerk.ch/latest/w2000/signalwerk.png)</code></pre>
+          </section>
+          <section>
+            <hr />
+            <h2>Colors</h2>
 
-          <h3>CSS · sRGB</h3>
+            <h3>CSS · sRGB</h3>
 
-          <pre><code class="lang-css"><span class="selector-pseudo" >:root</span> {
+            <pre><code class="lang-css"><span class="selector-pseudo" >:root</span> {
 <!--   -->  <span class="attribute" >--color-avatar-blue</span>: <span class="number" >#38a8e0</span>; <span class="comment" >/* rgb(56,168,224) */</span>
 <!--   -->  <span class="attribute" >--color-avatar-brown</span>: <span class="number" >#683b11</span>; <span class="comment" >/* rgb(104,59,17) */</span>
 <!--   -->}<!--
 .      --></code></pre>
-          <h3>CSS · CIE L*a*b*</h3>
+            <h3>CSS · CIE L*a*b*</h3>
 
-          <pre><code class="lang-css"><span class="selector-pseudo" >:root</span> {
+            <pre><code class="lang-css"><span class="selector-pseudo" >:root</span> {
 <!--   -->  <span class="attribute" >--color-avatar-blue</span>: <span class="built_in" >lab</span>(67%,-30,-38);
 <!--   -->  <span class="attribute" >--color-avatar-brown</span>: <span class="built_in" >lab</span>(34%,24,46);
 <!--   -->}<!--
 .      --></code></pre>
-        </section>
-        <section>
-          <h2>Portrait · JEPG 2000 px width</h2>
+          </section>
+          <section>
+            <hr />
+            <h2>Portrait · JEPG 2000 px width</h2>
 
-          <p>
-            Illustration by
-            <a
-              href="http://www.guedel.biz/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Benjamin Güdel
-            </a>
-            · 2020
-          </p>
+            <p>
+              Illustration by
+              <a
+                href="http://www.guedel.biz/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Benjamin Güdel
+              </a>
+              · 2020
+            </p>
 
-          <img
-            src="https://portrait.signalwerk.ch/illustration/2020/rgb/w2000/stefan-huber.png"
-            alt="Portrait Stefan Huber"
-          />
-          <h3>Markdown</h3>
-          <pre><code>![Portrait Stefan Huber](https://portrait.signalwerk.ch/illustration/2020/rgb/w2000/stefan-huber.jpg)</code></pre>
+            <img
+              src="https://portrait.signalwerk.ch/illustration/2020/rgb/w2000/stefan-huber.png"
+              alt="Portrait Stefan Huber"
+            />
+            <h3>Markdown</h3>
+            <pre><code>![Portrait Stefan Huber](https://portrait.signalwerk.ch/illustration/2020/rgb/w2000/stefan-huber.jpg)</code><br/><code>Illustration by [Benjamin Güdel](http://www.guedel.biz/) · 2020</code></pre>
 
-          <p>
-            There are other widths (<!--
+            <p>
+              There are other widths (<!--
 .          --><code>500</code>,
-            <!--
+              <!--
 .          --><code>1000</code>,
-            <!--
+              <!--
 .          --><code>1500</code>,
-            <!--
+              <!--
 .          --><code>2000</code>,
-            <!--
+              <!--
 .          --><code>3000</code>,
-            <!--
+              <!--
 .          --><code>4000</code>,
-            <!--
+              <!--
 .          --><code>6000</code>,
-            <!--
+              <!--
 .          --><code>8000</code
-            ><!--
+              ><!--
 .          -->) and formats (<!--
 .          --><code>.jpg</code>,
-            <!--
+              <!--
 .          --><code>.png</code
-            ><!--
+              ><!--
 .          -->) available by adjusting the URL.
-          </p>
-        </section>
-        <footer>
-          <h2>Source</h2>
-          <p>
-            <a rel="author" href="https://github.com/signalwerk/avatar"
-              >GitHub Repository</a
-            >
-          </p>
-        </footer>
+            </p>
+          </section>
+          <section>
+            <hr />
+            <h2>Source</h2>
+            <p>
+              <a rel="author" href="https://github.com/signalwerk/avatar"
+                >GitHub Repository</a
+              >
+            </p>
+            <br />
+            <br />
+            <br />
+            <br />
+          </section>
+        </div>
       </article>
     </main>
   </body>
