@@ -1,8 +1,27 @@
 const fs = require("fs");
 
-// SVG dimensions
-const width = 2000;
-const height = 2000;
+const defaultWidth = 2000;
+
+// Parse command line arguments for --width flag
+let inputWidth = null;
+let inputSnapToGrid = null;
+
+const args = process.argv.slice(2);
+
+for (let i = 0; i < args.length; i++) {
+  if (args[i] === "--width" && i + 1 < args.length) {
+    inputWidth = parseInt(args[i + 1], 10);
+  } else if (args[i] === "--snap-to-grid" && i + 1 < args.length) {
+    inputSnapToGrid = args[i + 1] === "true";
+    break;
+  }
+}
+
+// SVG dimensions: use argument if valid, otherwise fall back to default
+const width =
+  Number.isFinite(inputWidth) && inputWidth > 0 ? inputWidth : defaultWidth;
+const height = width;
+const snapToGrid = inputSnapToGrid === true;
 
 const precision = 2;
 const tolerance = 1e-6;
@@ -103,7 +122,11 @@ function pointsToPath(points, offsetX, offsetY) {
   };
 
   /* 1 ─ translate + clamp */
-  const abs = points.map(([px, py]) => [clamp(px + offsetX), py + offsetY]);
+  let abs = points.map(([px, py]) => [clamp(px + offsetX), py + offsetY]);
+
+  if (snapToGrid) {
+    abs = abs.map(([px, py]) => [Math.round(px), Math.round(py)]);
+  }
 
   /* 2 ─ build compact 'd' */
   let d = `m${fmt(abs[0][0])} ${fmt(abs[0][1])}`;
@@ -222,12 +245,10 @@ const brownPaths = generateBrownPaths();
 // Generate SVG
 let svg = `<svg viewBox="0 0 ${width} ${height}"
   xmlns="http://www.w3.org/2000/svg">
-  <rect width="${width}" height="${height}" fill="#ffffff"/>
-
+  <rect width="${width}" height="${height}" fill="#fff"/>
   <g fill="#38a8e0">
 ${bluePaths.join("\n")}
   </g>
-
   <g fill="#683b11">
 ${brownPaths.join("\n")}
   </g>
