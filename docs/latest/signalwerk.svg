@@ -1,108 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
-  <defs>
-    <mask id="canvasMask">
-      <rect width="2000" height="2000" fill="white" />
-    </mask>
-    <g id="splitHexagon">
-      <polygon points="-164.9572197684645,-285.7142857142857 164.9572197684645,-285.7142857142857 329.914439536929,0 0,0" fill="#38a8e0" />
-      <polygon points="0,0 329.914439536929,0 164.9572197684645,285.7142857142857 -164.9572197684645,285.7142857142857" fill="#683b11" />
-    </g>
-  </defs>
-  
-  <!-- White background -->
-  <rect width="2000" height="2000" fill="white" />
-  
-  <!-- Masked hexagon pattern -->
-  <g mask="url(#canvasMask)">
-    <g transform="translate(-82.47860988423226, 0)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(412.3930494211613, 285.7142857142857)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(907.2647087265549, 0)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1402.1363680319482, 285.7142857142857)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1897.008027337342, 0)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(2391.8796866427356, 285.7142857142857)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(-82.47860988423226, 571.4285714285714)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(412.3930494211613, 857.1428571428571)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(907.2647087265549, 571.4285714285714)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1402.1363680319482, 857.1428571428571)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1897.008027337342, 571.4285714285714)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(2391.8796866427356, 857.1428571428571)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(-82.47860988423226, 1142.857142857143)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(412.3930494211613, 1428.5714285714287)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(907.2647087265549, 1142.857142857143)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1402.1363680319482, 1428.5714285714287)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1897.008027337342, 1142.857142857143)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(2391.8796866427356, 1428.5714285714287)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(-82.47860988423226, 1714.2857142857142)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(412.3930494211613, 2000)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(907.2647087265549, 1714.2857142857142)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1402.1363680319482, 2000)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1897.008027337342, 1714.2857142857142)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(2391.8796866427356, 2000)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(-82.47860988423226, 2285.714285714286)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(412.3930494211613, 2571.4285714285716)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(907.2647087265549, 2285.714285714286)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1402.1363680319482, 2571.4285714285716)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(1897.008027337342, 2285.714285714286)">
-      <use href="#splitHexagon" />
-    </g>
-    <g transform="translate(2391.8796866427356, 2571.4285714285716)">
-      <use href="#splitHexagon" />
-    </g>
+<svg viewBox="0 0 2000 2000"
+  xmlns="http://www.w3.org/2000/svg">
+  <rect width="2000" height="2000" fill="#ffffff"/>
+
+  <g fill="#38a8e0">
+    <path d="m247.44 0h329.91l164.96 285.71h-329.91z"/>
+    <path d="m1237.18 0h329.91l164.96 285.71h-329.91z"/>
+    <path d="m0 285.71h82.48l164.96 285.71h-247.44z"/>
+    <path d="m247.44 571.43h329.91l164.96 285.71h-329.91z"/>
+    <path d="m742.31 285.71h329.91l164.96 285.71h-329.91z"/>
+    <path d="m1237.18 571.43h329.91l164.96 285.71h-329.91z"/>
+    <path d="m1732.05 285.71h267.95v285.71h-102.99z"/>
+    <path d="m0 857.14h82.48l164.96 285.71h-247.44z"/>
+    <path d="m247.44 1142.86h329.91l164.96 285.71h-329.91z"/>
+    <path d="m742.31 857.14h329.91l164.96 285.71h-329.91z"/>
+    <path d="m1237.18 1142.86h329.91l164.96 285.71h-329.91z"/>
+    <path d="m1732.05 857.14h267.95v285.71h-102.99z"/>
+    <path d="m0 1428.57h82.48l164.96 285.71h-247.44z"/>
+    <path d="m247.44 1714.29h329.91l164.96 285.71h-329.91z"/>
+    <path d="m742.31 1428.57h329.91l164.96 285.71h-329.91z"/>
+    <path d="m1237.18 1714.29h329.91l164.96 285.71h-329.91z"/>
+    <path d="m1732.05 1428.57h267.95v285.71h-102.99z"/>
+  </g>
+
+  <g fill="#683b11">
+    <path d="m0 0h247.44l-164.96 285.71h-82.48z"/>
+    <path d="m412.39 285.71h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m907.26 0h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m1402.14 285.71h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m1897.01 0h102.99v285.71h-267.95z"/>
+    <path d="m0 571.43h247.44l-164.96 285.71h-82.48z"/>
+    <path d="m412.39 857.14h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m907.26 571.43h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m1402.14 857.14h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m1897.01 571.43h102.99v285.71h-267.95z"/>
+    <path d="m0 1142.86h247.44l-164.96 285.71h-82.48z"/>
+    <path d="m412.39 1428.57h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m907.26 1142.86h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m1402.14 1428.57h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m1897.01 1142.86h102.99v285.71h-267.95z"/>
+    <path d="m0 1714.29h247.44l-164.96 285.71h-82.48z"/>
+    <path d="m907.26 1714.29h329.91l-164.96 285.71h-329.91z"/>
+    <path d="m1897.01 1714.29h102.99v285.71h-267.95z"/>
   </g>
 </svg>
