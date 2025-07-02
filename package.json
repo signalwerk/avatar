@@ -1,0 +1,15 @@
+{
+  "name": "avatar",
+  "version": "1.0.0",
+  "description": "avatar generator",
+  "main": "generate_pattern.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "generate": "node generate.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

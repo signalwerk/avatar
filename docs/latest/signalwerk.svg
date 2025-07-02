@@ -1,57 +1,108 @@
-<svg viewBox="0 0 2000 2000"
-    xmlns="http://www.w3.org/2000/svg">
-    <rect width="2000" height="2000" fill="#ffffff"/>
-
-    <g fill="#38a8e0">
-        <path d="m247.44 0 164.96 285.85-.01.15h329.92l-164.95-286z"/>
-        <path d="m1732.06 286-164.96-286h-329.92l164.96 286z"/>
-
-        <path d="m0 571h247.44l-164.96-285h-82.48z"/>
-        <path d="m742.31 286 164.96 285h329.91l-164.95-285z"/>
-        <path d="m2000 286h-267.94l164.95 285h102.99z"/>
-
-        <path d="m247.44 571 164.96 285.85-.01.15h329.92l-164.95-286z"/>
-        <path d="m1237.18 571 164.96 286h329.92l-164.96-286z"/>
-
-        <path d="m0 1143h247.44l-164.96-286h-82.48z"/>
-        <path d="m742.31 857 164.96 286h329.91l-164.95-286z"/>
-        <path d="m2000 857h-267.94l164.95 286h102.99z"/>
-
-        <path d="m247.44 1143 164.96 285.85-.01.15h329.92l-164.95-286z"/>
-        <path d="m1237.18 1143 164.96 286h329.92l-164.96-286z"/>
-
-        <path d="m0 1714h247.44l-164.96-285h-82.48z"/>
-        <path d="m742.31 1429 164.96 285h329.91l-164.95-285z"/>
-        <path d="m2000 1429h-267.94l164.95 285h102.99z"/>
-
-        <path d="m247.44 1714 164.96 285.85-.01.15h329.92l-164.95-286z"/>
-        <path d="m1237.18 1714 164.96 286h329.92l-164.96-286z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <defs>
+    <mask id="canvasMask">
+      <rect width="2000" height="2000" fill="white" />
+    </mask>
+    <g id="splitHexagon">
+      <polygon points="-164.9572197684645,-285.7142857142857 164.9572197684645,-285.7142857142857 329.914439536929,0 0,0" fill="#38a8e0" />
+      <polygon points="0,0 329.914439536929,0 164.9572197684645,285.7142857142857 -164.9572197684645,285.7142857142857" fill="#683b11" />
     </g>
-
-    <g fill="#683b11">
-        <path d="m82.48 286 164.96-286h-247.44v286z"/>
-        <path d="m1237.18 0h-329.91l-164.96 286h329.92z"/>
-        <path d="m2000 0h-102.99l-164.95 286h267.94z"/>
-
-        <path d="m742.31 286h-329.92l-164.95 285h329.92z"/>
-        <path d="m1732.06 286h-329.92l-164.96 285h329.92z"/>
-
-        <path d="m0 571v286h82.48l164.96-286z"/>
-        <path d="m1237.18 571h-329.91l-164.96 286h329.92z"/>
-        <path d="m2000 571h-102.99l-164.95 286h267.94z"/>
-
-        <path d="m742.31 857h-329.92l-164.95 286h329.92z"/>
-        <path d="m1237.18 1143h329.92l164.96-286h-329.92z"/>
-
-        <path d="m0 1429h82.48l164.96-286h-247.44z"/>
-        <path d="m742.31 1429h329.92l164.95-286h-329.91z"/>
-        <path d="m2000 1143h-102.99l-164.95 286h267.94z"/>
-
-        <path d="m247.44 1714h329.92l164.95-285h-329.92z"/>
-        <path d="m1237.18 1714h329.92l164.96-285h-329.92z"/>
-
-        <path d="m0 2000h82.48l164.96-286h-247.44z"/>
-        <path d="m742.31 2000h329.92l164.95-286h-329.91z"/>
-        <path d="m1897.01 1714-164.95 286h267.94v-286z"/>
+  </defs>
+  
+  <!-- White background -->
+  <rect width="2000" height="2000" fill="white" />
+  
+  <!-- Masked hexagon pattern -->
+  <g mask="url(#canvasMask)">
+    <g transform="translate(-82.47860988423226, 0)">
+      <use href="#splitHexagon" />
     </g>
+    <g transform="translate(412.3930494211613, 285.7142857142857)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(907.2647087265549, 0)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1402.1363680319482, 285.7142857142857)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1897.008027337342, 0)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(2391.8796866427356, 285.7142857142857)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(-82.47860988423226, 571.4285714285714)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(412.3930494211613, 857.1428571428571)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(907.2647087265549, 571.4285714285714)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1402.1363680319482, 857.1428571428571)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1897.008027337342, 571.4285714285714)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(2391.8796866427356, 857.1428571428571)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(-82.47860988423226, 1142.857142857143)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(412.3930494211613, 1428.5714285714287)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(907.2647087265549, 1142.857142857143)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1402.1363680319482, 1428.5714285714287)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1897.008027337342, 1142.857142857143)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(2391.8796866427356, 1428.5714285714287)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(-82.47860988423226, 1714.2857142857142)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(412.3930494211613, 2000)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(907.2647087265549, 1714.2857142857142)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1402.1363680319482, 2000)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1897.008027337342, 1714.2857142857142)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(2391.8796866427356, 2000)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(-82.47860988423226, 2285.714285714286)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(412.3930494211613, 2571.4285714285716)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(907.2647087265549, 2285.714285714286)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1402.1363680319482, 2571.4285714285716)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(1897.008027337342, 2285.714285714286)">
+      <use href="#splitHexagon" />
+    </g>
+    <g transform="translate(2391.8796866427356, 2571.4285714285716)">
+      <use href="#splitHexagon" />
+    </g>
+  </g>
 </svg>
